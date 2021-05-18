@@ -74,10 +74,7 @@ def main(directory, output):
 
 	dirFiles = glob.glob(directoryPath)
 	titles = list(map(lambda x: x[len(directoryPath)-5 : len(directoryPath)], dirFiles))
-
-	MEA_num = dirFiles[0][len(directoryPath)+1 : len(directoryPath)+6]
-
-	print(MEA_num)
+	
 	print(titles)		
 
 	for index, fileName in enumerate(dirFiles):
