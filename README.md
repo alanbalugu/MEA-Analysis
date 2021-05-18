@@ -50,3 +50,5 @@ MEA_Clustering.py is the most complicated script that has many lines commented o
 
     scatterPlot3(newData['cluster_labels'], newData['Coefficients'], "cluster labels", "tiling coefficient", "clusters = 5", False)
     #scatterPlot3(newData['cluster_labels'], newData['Distances'], "cluster labels", "distances", "clusters = 5", False)
+
+Contact agb76 @ georgetown.edu for questions/concerns. These scripts were made for the Dzakpasu Lab in the Georgetown University Department of Pharmacology and Physiology. The accuracy of the plots are not guaranteed. Use with your own discretion.
