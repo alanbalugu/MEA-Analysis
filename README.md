@@ -1,8 +1,12 @@
 # MEA-Analysis
 Python scripts for various analyses of MEA spiking data. Includes raster plots, ISI histograms, Spike rate plots, STTC plots, and graph-based analysis.
 
+**Input files are encoded with columns for each electrode and the spike times populating the columns. Reading in such files are customized for the MCS MEA2100 system with 60 electrodes arranged in an 8x8 grid. Reading in data from other sources will require modification to the "csv_to_raster() or CSV_to_matrix() functions to properly read in the .csv spiking data file, as well as modification to the heatmap scripts and network creation/analysis scripts (they use the electrode name for the position in the grid)**
+
 Files are run as usual for Python. 
 MEA-RasterPlots.py can be run with optional command line arguments: First argument is the input file directory path (ex. "/Users/Me/DataFiles"). Second argument is formatted similarly and is the output directory for the raster plot images.
+
+Reading in files requires a mapping of the electrodes found in the datafile to all electrodes possible, so that all electrodes, even if silent, are present in the DataFrame. Modify the csv_to_raster() and CSV_to_matrix() methods as needed to accomplish this. 
 
 Most files include a start and stop time in seconds (t_start and t_stop) in the code that determines what portion of the recording to read the spiking data from. (ex. 240s to 300s) . -> change in script to adjust to needs.
 
