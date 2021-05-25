@@ -133,7 +133,7 @@ if __name__ == '__main__':
 		if(len(sys.argv) < 2):
 			print("running with default location")
 			#First argument is directory of input .csv files. Second argument is directory to output raster plots
-			main("C:\\Users\\Ganesh Balu\\Documents\\Pending Files", "C:\\Users\\Ganesh Balu\\Documents\\Pending Files")
+			main("<Default input file directory for .csv spiking data>", "<Default output file directory for raster plots>")
 		elif(len(sys.argv) == 2):
 			main(sys.argv[1], sys.argv[1])
 		else:
