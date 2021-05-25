@@ -56,7 +56,7 @@ def csv_to_raster(fileName, title, output):
 	plt.ylabel('Channels', fontsize=16)
 	plt.gca().tick_params(axis='both', which='major', labelsize=14)
 	#plt.show()
-	name = output+"\\"+title+"LastMin"+".jpg"
+	name = output+"\\"+title+"_Raster"+".jpg"
 	plt.savefig(name, dpi=600)
 
 
