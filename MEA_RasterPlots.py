@@ -98,7 +98,7 @@ if __name__ == '__main__':
 
 		if(len(sys.argv) < 2):
 			print("running with default location")
-			main("<INSERT DIRECTORY PATH HERE TO .CSV SPIKING DATA FILES>")
+			main("<INSERT DEFAULT DIRECTORY PATH HERE TO .CSV SPIKING DATA FILES>", "<INSERT DEFAULT OUTPUT DIRECTORY PATH HERE")
 		elif(len(sys.argv) == 2):
 			main(sys.argv[1], sys.argv[1])
 		else:
