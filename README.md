@@ -3,7 +3,7 @@ Python scripts for various analyses of MEA spiking data. Includes raster plots, 
 
 **Input files are encoded with columns for each electrode and the spike times populating the columns. Reading in such files are customized for the MCS MEA2100 system with 60 electrodes arranged in an 8x8 grid. Reading in data from other sources will require modification to the "csv_to_raster() or CSV_to_matrix() functions to properly read in the .csv spiking data file, as well as modification to the heatmap scripts and network creation/analysis scripts (they use the electrode name for the position in the grid)**
 
-**The file path for the .csv spiking data files are hard-coded for all of te scripts except MEA_RasterPlots.py. Change the line in main() to the appropriate input file directory path in the scripts. The line that needs to be changed is something like: directoryPath = "<insert the directory path here>"**
+**The file path for the input .csv spiking data files are hard-coded for all of the scripts (except MEA_RasterPlots.py - see below for those instructions). Change the line in main() to the appropriate input file directory path in the scripts. The line that needs to be changed is something like: directoryPath = "<insert the directory path here>"**
 
 Files are run as usual for Python. 
   MEA-RasterPlots.py can be run with optional command line arguments: First argument is the input file directory path (ex. "/Users/Me/DataFiles"). Second argument is formatted similarly and is the output directory for the raster plot images. 
